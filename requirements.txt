@@ -1,0 +1,11 @@
+# Discord Music Bot Requirements
+
+# Discord bot framework
+discord.py>=2.3.0
+
+# YouTube downloader (for extracting audio streams)
+yt-dlp>=2024.1.0
+
+# FFmpeg is also required (install separately)
+# Windows: Download from https://ffmpeg.org/download.html
+# Add ffmpeg to your system PATH

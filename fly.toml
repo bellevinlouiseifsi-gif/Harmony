@@ -1,0 +1,17 @@
+app = "your-bot-name"
+primary_region = "ams"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  bot = "python main.py"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+
+[[services]]
+  process = "bot"
+  protocol = "tcp"
+  [services.concurrency]
+    hard_limit = 25
